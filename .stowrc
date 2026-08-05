@@ -1,0 +1,3 @@
+--ignore=.stowrc
+--ignore=README.md
+--ignore=install.sh
