@@ -1,0 +1,28 @@
+﻿[alias]
+  aa = add -A
+  amend = commit -a --amend --no-edit
+  br = branch
+  bra = branch -a
+  cdf = clean -df
+  ci = commit
+  co = checkout
+  cod = checkout .
+  conf = config --global --edit
+  pr = pull --rebase
+  rh = reset HEAD
+  st = status -s
+  sta = status
+[user]
+  email = 144526955+vkhalash@users.noreply.github.com
+  name = Vitalii Khalash
+[core]
+  editor = nvim
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+[pull]
+  rebase = false
+[init]
+  defaultBranch = main
