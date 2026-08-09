@@ -1,3 +1,4 @@
 # Settings for common commands
 alias bc="bc -ql"
 alias mkd="mkdir -pv"
+alias ls="eza --icons --group-directories-first"
