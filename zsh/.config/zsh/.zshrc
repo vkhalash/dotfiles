@@ -35,6 +35,11 @@ setopt share_history
 autoload -U select-word-style
 select-word-style bash
 
+# cd to folder when quitting lf
+lfcd () {
+  cd "$(command lf -print-last-dir "$@")"
+}
+
 # A simple, fast, minimalist Zsh plugin management function
 # Script by mattmc3 from https://github.com/mattmc3/zsh_unplugged
 function plugin-load {
@@ -76,6 +81,16 @@ repos=(
   zdharma-continuum/fast-syntax-highlighting
 )
 plugin-load $repos
+
+# Set up fzf key bindings and fuzzy completion
+eval "$(fzf --zsh)"
+# fzf Catppuccin theme
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=selected-bg:#45475A \
+--color=border:#6C7086,label:#CDD6F4"
 
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
