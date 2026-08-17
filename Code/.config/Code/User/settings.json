@@ -1,0 +1,36 @@
+{
+  "debug.console.fontSize": 16,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 16,
+  "editor.renderWhitespace": "all",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "git.autofetch": true,
+  "git.openRepositoryInParentFolders": "always",
+  "markdown.preview.fontSize": 16,
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontSize": 16,
+  "update.showReleaseNotes": false,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.enableExperiments": false,
+  "workbench.startupEditor": "none",
+  "[markdown]": {
+    "editor.wordWrap": "on"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
